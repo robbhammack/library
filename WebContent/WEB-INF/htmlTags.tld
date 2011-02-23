@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+<tlib-version>2.5</tlib-version>
+<jsp-version>1.2</jsp-version>
+<short-name>htmlTags</short-name>
+<uri>dbforms.tld</uri>
+<display-name>xhtml Tags</display-name>
+<description>version 0.1</description>
+
+<tag>
+<name>select</name>
+<tag-class>com.rhammack.library.tag.XHTML</tag-class>
+<body-content>JSP</body-content>
+<description>
+		this tag renders a select tag (drop-down list)
+</description>
+
+<attribute>
+<name>name</name>
+<required>true</required>
+<rtexprvalue>true</rtexprvalue>
+<description>
+html name attribute of the select - will also set the id attribute
+</description>
+</attribute>
+
+<attribute>
+<name>dataSource</name>
+<required>true</required>
+<rtexprvalue>true</rtexprvalue>
+<description>
+the jdbc resource name of the datasource
+</description>
+</attribute>
+
+<attribute>
+<name>sql</name>
+<required>true</required>
+<rtexprvalue>""</rtexprvalue>
+<description>
+the sql query to run
+</description>
+</attribute>
+
+<attribute>
+<name>idField</name>
+<required>true</required>
+<rtexprvalue>""</rtexprvalue>
+<description>
+the db field to use as the value
+</description>
+</attribute>
+
+<attribute>
+<name>displayField</name>
+<required>true</required>
+<rtexprvalue>""</rtexprvalue>
+<description>
+the db field to display
+</description>
+</attribute>
+
+</tag>
+
+</taglib>
